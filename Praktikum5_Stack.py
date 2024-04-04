@@ -28,6 +28,10 @@ class Stack:
             print("Stack:")  #Jika ada stack 
             for item in (self.tack):
                 print("[",item,"]")
+
+    def stack_hasil(self):
+        for item in (self.tack):
+                print("[",item,"]")
     
 
 
@@ -42,8 +46,10 @@ def main():  #Program utama
             OStack.pop()
         elif pilihan == "3":
             OStack.tampilan_stack()
-        else:
-         break
+        elif pilihan == "4":
+            OStack.stack_hasil()
+            break       
+         
 
 if __name__ == '__main__':
     main()
